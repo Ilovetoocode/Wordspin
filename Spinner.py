@@ -14,8 +14,32 @@ def make_synonym_dictionary(list):
         synonymdict[broken_list[0]]=[]
         second_broken_list=broken_list[1].split(",")
         synonymdict[broken_list[0]]+=second_broken_list
+    return synonymdict
+
 class Spinner:
-    def __int__(self, inputtext):
-        self.synonyms=make_synonym_dictionary(make_list_from_file("synonyms-simplified.txt"))
-        self.input=inputtext
-    def Spintowin(self, ):
+    def __init__ (self, input):
+        self.synonyms= make_synonym_dictionary(make_list_from_file("synonyms-simplified.txt"))
+        self.input=input
+    def Spintowin(self):
+        output=""
+        input=self.input
+        for word in input:
+            if word in self.synonyms:
+                output+=(wordrandomizer(word, self.synonyms))
+            else:
+                output+=(word)
+            output+=" "
+        return output
+
+
+
+
+def wordrandomizer(input, syndict):
+    maybe_change=random.randint(0,100)
+    new_word=""
+    if maybe_change >= 50:
+        word_change=random.randint(0,len(syndict[input])-1)
+        new_word=syndict[input][word_change]
+    else:
+        new_word=input
+    return new_word
