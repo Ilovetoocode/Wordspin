@@ -5,7 +5,7 @@
 import Spinner
 
 def main():
-   Spinner.make_list_from_file("synonyms-simplified.txt")
+   
 
 
 # Press the green button in the gutter to run the script.
