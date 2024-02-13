@@ -4,4 +4,13 @@ def make_list_from_file(file):
         items = []
         for line in file:
             items += line.splitlines()
-        print(items)
+        return items
+def make_synonym_dictionary(list):
+    synonymdict={}
+    broken_list=[]
+    second_broken_list=[]
+    for lines in list:
+        broken_list=lines.split(":")
+        synonymdict[broken_list[0]]=[]
+        second_broken_list=broken_list[1].split(",")
+        synonymdict[broken_list[0]]+=second_broken_list
