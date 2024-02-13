@@ -15,5 +15,7 @@ def make_synonym_dictionary(list):
         second_broken_list=broken_list[1].split(",")
         synonymdict[broken_list[0]]+=second_broken_list
 class Spinner:
-    def __int__(self):
+    def __int__(self, inputtext):
         self.synonyms=make_synonym_dictionary(make_list_from_file("synonyms-simplified.txt"))
+        self.input=inputtext
+    def Spintowin(self, ):
