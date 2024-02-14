@@ -21,6 +21,7 @@ def main():
       changed_text = spinner.Spintowin()
       print("Option {i+1}: {changed_text}") # prints the index of the current location
       original_text = changed_text
+      print(changed_text)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
