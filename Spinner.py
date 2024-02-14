@@ -24,7 +24,7 @@ def make_synonym_dictionary(list):
 def wordrandomizer(input, syndict):
     maybe_change=random.randint(0,100)
     new_word=""
-    if maybe_change >= 50:
+    if maybe_change >= 10:
         word_change=random.randint(0,len(syndict[input])-1)
         new_word=syndict[input][word_change]
     else:
