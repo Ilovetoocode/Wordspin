@@ -13,6 +13,10 @@ def read_text(filename):
       return text
 
 def main():
+   original_text = read_text('essay.txt') # read the original text from essay
+   print("Original", original_text)
+
+
 
 
 
