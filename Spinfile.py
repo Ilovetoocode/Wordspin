@@ -14,12 +14,12 @@ def read_text(filename):
 
 def main():
    original_text = read_text('essay.txt') # read the original text from essay
-   print("Original", original_text)
+   print("Original", "\n", original_text)
 
    spinner = Spinner(original_text)
    for i in range(3): # convert the original text 3 times
       changed_text = spinner.Spintowin()
-      print("Option {i+1}: {changed_text}") # prints the index of the current location
+      print("Option", i+1, "\n", changed_text) # prints the index of the current location
       original_text = changed_text
 
 # Press the green button in the gutter to run the script.

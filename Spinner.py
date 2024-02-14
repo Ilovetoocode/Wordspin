@@ -24,7 +24,7 @@ def make_synonym_dictionary(list):
 def wordrandomizer(input, syndict):
     maybe_change=random.randint(0,100)
     new_word=""
-    if maybe_change >= 50:
+    if maybe_change >= 10:
         word_change=random.randint(0,len(syndict[input])-1)
         new_word=syndict[input][word_change]
     else:
@@ -37,7 +37,7 @@ class Spinner:
     ##so it can work with the one method it has.
     def __init__ (self, input):
         self.synonyms= make_synonym_dictionary(make_list_from_file("synonyms-simplified.txt"))
-        self.input=input
+        self.input=input.split()
     def Spintowin(self):
         ##This is the main spinning function itself, taking in text to determine whether or not to send it to the wordrandomizer function defined earlier, putting in either the output of the function
         ##Or just putting in the text itself if the word's not in the self.synonyms dictionary
