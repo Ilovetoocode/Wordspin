@@ -6,12 +6,10 @@
 from Spinner import Spinner
 import string
 
-def remove_punctuation(text):
 
 def read_text(filename):
    with open(filename,'r') as file:
-      text = file.read().lower()
-      text = remove_punctuation(text)
+      text = file.read().lower().translate(str.maketrans('', '', string.punctuation))
       return text
 
 def main():
