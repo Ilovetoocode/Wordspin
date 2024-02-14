@@ -9,9 +9,9 @@ def make_list_from_file(file):
 ## This second one is also from the bot project! Though, it's been, slightly modified... Originally it would only have one list
 ##For broken list stuff, but due to how this new program needs to handle abritrary numbers of values for keys. Works pretty well!
 def make_synonym_dictionary(list):
-    synonymdict={}
-    broken_list=[]
-    second_broken_list=[]
+    synonymdict = {}
+    broken_list = []
+    second_broken_list = []
     for lines in list:
         broken_list=lines.split(":")
         synonymdict[broken_list[0]]=[]
