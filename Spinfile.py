@@ -1,4 +1,4 @@
-# Code by Connor Walton and Long Nyguen
+# Code by Connor Walton and Long Nguyen
 # Assignment A4, Word Spinner for comp 1020
 
 # Starting out: we import both the spinner object and the string package.
@@ -14,7 +14,7 @@ def read_text(filename):
         return text
 
 
-# This function's a little bit extra! The original idea goes to Nyguen. He decided that the results file should
+# This function's a little bit extra! The original idea goes to Nguyen. He decided that the results file should
 # automagically be updated each time you ran the program! The original version had this code in the main function,
 # as seen in the git repo For readability however, anything pertaining to the printing has been turned into its own
 # function to be called. With all that out of the way, this first one overwrites the original results.txt file,
