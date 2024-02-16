@@ -31,7 +31,7 @@ This program:
 
 # Authors
 - [Connor Walton (Ilovetoocode)](https://github.com/Ilovetoocode)
-- [Nhahan Nguyen(LongNyguyen567)](https://github.com/LongNguyen567)
+- [Nhahan Nyguyen(LongNyguyen567)](https://github.com/LongNguyen567)
 
   # Example
   To give an example of how this program runs, here's the first section of this readme after being thrown into the program. Unedited as well, with all three results.
